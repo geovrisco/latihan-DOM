@@ -109,7 +109,7 @@ btnPlayerAtk.onclick = () =>{
     hurtStance()
     playAudio()
 
-    if (player.healthPoint<=0 && slime.healthPoint>0){
+    if (player.healthPoint<=0 && slime.healthPoint>player.healthPoint){
         alert('You are slained by slime? HOW CAN YOU FACE THE WORLD?'+'\n'+'You are an embarassment'+'click ok to go to title screen')
         alert('WOW! Just WOW! you really click the Ok button?'+'\n'+' your will is so weak, no wonder that reek slime can kill you')
         alert('friendly reminder:')
@@ -175,7 +175,7 @@ btnHeal.onclick = () =>{
     healaudio()
     enemyAtk()
     playerHp.innerHTML=player.healthPoint
-    if (player.healthPoint<=0 && slime.healthPoint>0){
+    if (player.healthPoint<=0 && slime.healthPoint>player.healthPoint){
         alert('You are slained by slime? HOW CAN YOU FACE THE WORLD?'+'\n'+'You are an embarassment')
         window.location='index.html'
     } 
